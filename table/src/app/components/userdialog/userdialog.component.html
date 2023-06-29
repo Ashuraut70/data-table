@@ -1,0 +1,19 @@
+<div class="modal"> 
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>phone</th>
+                </tr>
+            </thead>
+            <tbody class="table-body">
+                <tr class="table-body-item" >
+                    <td>{{userDetails.first_name}}</td>
+                    <td>{{userDetails.email}}</td>
+                    <td>{{userDetails.mobile}}</td>
+                </tr>
+            </tbody>
+        </table>
+  <button (click)="closeModal()">close</button>
+</div>

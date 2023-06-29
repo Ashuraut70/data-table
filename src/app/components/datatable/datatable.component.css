@@ -1,0 +1,31 @@
+.data-main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data-actions {
+    /* width: ; */
+    display: flex;
+    justify-content: space-between;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.table-body {
+    height: 40vh;
+    overflow-y: auto;
+}
+
+.searchinput {
+    border-radius: 10px;
+}
+
+.table-body-item {
+    height: 20px;
+}

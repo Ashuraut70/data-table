@@ -1,0 +1,26 @@
+<div class="data-main">
+    <div class="data-actions">
+         <input  class="searchinput" (change)="search($event)" placeholder="Search by email address" type="search" name="search" id="">
+         <button >create</button>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>phone</th>
+                <th>action</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr class="table-body-item" *ngFor = 'let user of rows'>
+                <td>{{user.first_name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.mobile}}</td>
+                <td><button (click)="Delete(user)">delete</button></td>
+                <td><button (click)="details(user)">details</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
